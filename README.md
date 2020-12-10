@@ -73,3 +73,5 @@ python scraper.py
 | `ownersCount`  | `str`    | количество владельцев |
 | `is_customs`  | `str`    | растоможенность |
 | `price`  | `int`    | цена автомобиля |
+
+![data frame example](img/data_frame_example.png "data frame example")
