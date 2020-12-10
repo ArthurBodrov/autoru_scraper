@@ -4,7 +4,7 @@
 
 Пример, как это ⬇️ объявление переходит структурированную таблицу с данными.
 
-![car announcment](img/car_announcment.png "car announcment")
+<img src="img/car_announcment.png" width="200" height="200">
 
 Переходит в таблицу с данными.
 
