@@ -31,9 +31,7 @@ class ItemDataCollector:
 
         self.result['km_age'] = prefilled_data['km-age']
         self.result['mark'] = prefilled_data['mark']
-        self.result['markName'] = prefilled_data['markName']
         self.result['model'] = prefilled_data['model']
-        self.result['modelName'] = prefilled_data['modelName']
         self.result['power'] = prefilled_data['power']
         self.result['segment'] = prefilled_data['segment']
         self.result['state'] = prefilled_data['state']
