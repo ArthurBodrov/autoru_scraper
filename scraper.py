@@ -25,17 +25,16 @@ class AutoruScraper:
     
     def __call__(self):
         for i in range(0, self.settings.max_page):
-            new_urls = self.link_collector.grab_links(i)
-            current_df = self.get_current_df()
+            urls = self.link_collector.grab_links(i)
+            current_cars_df = self.get_current_df()
             items = []
-            for url in new_urls['item_link']:
+            for url in urls:
                 item = self.item_data_collector.scrape_page(url)
-                if item != {}:
-                    items.append(item)
+                if item != {}: items.append(item)
                 time.sleep(self.settings.item_sleep_time)
-            items_df = pd.DataFrame(items)
-            new_current = pd.concat([current_df, items_df])
-            new_current.to_csv(self.settings.df_name, index=False)
+
+            new_cars_df = pd.concat([current_cars_df, pd.DataFrame(items)])
+            new_cars_df.to_csv(self.settings.df_name, index=False)
             print(f"Progress: {round((i+1) / self.settings.max_page * 100, 2)}%")
             time.sleep(self.settings.page_sleep_time)
 

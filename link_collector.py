@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 import urllib.request
-import pandas as pd
 
 BASE_URL = "https://auto.ru/moskva/cars/all/"
 
@@ -19,4 +18,4 @@ class LinkCollector:
         soup = BeautifulSoup(page_content, 'html.parser')
         items_element = soup.find_all('a', attrs={'class': 'ListingItemTitle-module__link'})
         items_urls = list(map(self.get_href, items_element))
-        return pd.DataFrame({"item_link": items_urls})
+        return items_urls
