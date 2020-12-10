@@ -8,7 +8,7 @@ from item_data_collector import ItemDataCollector
 SETTINGS_PATH = "settings.json"
 
 class AutoruScraper:
-    """ !!!!!! ТУТ ДОЛЖНО БЫТЬ ОПИСАНИЕ """
+    """ Main class for collect data & create data frame """
 
     def __init__(self, config_path: str = SETTINGS_PATH):
         # self.settings = ...
