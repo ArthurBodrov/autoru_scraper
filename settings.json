@@ -1,0 +1,6 @@
+{
+    "max_page": 3,
+    "page_sleep_time": 2,
+    "item_sleep_time": 1,
+    "df_name": "autoru_items.csv"
+}
