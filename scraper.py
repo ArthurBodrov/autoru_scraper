@@ -28,6 +28,7 @@ class AutoruScraper:
             urls = self.link_collector.grab_links(i)
             current_cars_df = self.get_current_df()
             items = []
+
             for url in urls:
                 item = self.item_data_collector.scrape_page(url)
                 if item != {}: items.append(item)
