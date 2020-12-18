@@ -4,7 +4,7 @@
 
 Пример, как это ⬇️ объявление переходит структурированную таблицу с данными.
 
-<img src="img/car_announcment.png" width="400" height="400">
+<img src="img/car_announcment.png">
 
 Переходит в таблицу с данными.
 
